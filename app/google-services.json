@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "976514603021",
+    "project_id": "qlphongtro-bb473",
+    "storage_bucket": "qlphongtro-bb473.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976514603021:android:ee0c82c3c39a6786031d44",
+        "android_client_info": {
+          "package_name": "nnh19607021.tdtu.phongtro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976514603021-pr4u8il8inb7c2i88qnbcs1kkf3ht6sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtbsoECwgLMmuMl68I6Tx9Gi2NrE3ff0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976514603021-pr4u8il8inb7c2i88qnbcs1kkf3ht6sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
