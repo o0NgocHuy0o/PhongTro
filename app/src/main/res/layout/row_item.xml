@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_margin="10dp"
+    tools:ignore="MissingConstraints"
+    android:id="@+id/layout_item">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            android:background="@drawable/home_gradient_maths"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/twSoPhong"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="Phòng 01" />
+
+            <TextView
+                android:id="@+id/twThongTin"
+                style="@style/viewParent.headerText.homeCardContent"
+                android:layout_below="@+id/twSoPhong"
+                android:text="Thông tin cơ bản của người trọ" />
+
+            <ImageView
+                android:maxHeight="90dp"
+                android:src="@drawable/home_ic_maths"
+                style="@style/homeCardImage" />
+
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>
