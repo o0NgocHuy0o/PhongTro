@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/drawable-v24/login_button_bk.xml" value="0.11614583333333334" />
+<<<<<<< HEAD
         <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/drawable/home_gradient_maths.xml" value="0.22552083333333334" />
         <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/drawable/ic_home.xml" value="0.22552083333333334" />
         <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/drawable/ic_user.xml" value="0.22552083333333334" />
@@ -15,6 +16,18 @@
         <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/layout/content_main.xml" value="0.19157608695652173" />
         <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/layout/row_item.xml" value="0.19972826086956522" />
         <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/menu/master_bottom_navigation.xml" value="0.209375" />
+=======
+        <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/layout/activity_login.xml" value="0.209375" />
+        <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/layout/activity_main.xml" value="0.1953125" />
+        <entry key="..\:/TDTU/AndroidBaiTap/PhongTro/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/TDTU/HK1-2021-2022/Android/practice/QuanLy-PhongTro/PhongTro/app/src/main/res/layout/activity_detail.xml" value="0.264" />
+        <entry key="..\:/TDTU/HK1-2021-2022/Android/practice/QuanLy-PhongTro/PhongTro/app/src/main/res/layout/activity_login.xml" value="0.22916666666666666" />
+        <entry key="..\:/TDTU/HK1-2021-2022/Android/practice/QuanLy-PhongTro/PhongTro/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/TDTU/HK1-2021-2022/Android/practice/QuanLy-PhongTro/PhongTro/app/src/main/res/layout/payment.xml" value="0.2" />
+        <entry key="..\:/TDTU/HK1-2021-2022/Android/practice/QuanLy-PhongTro/PhongTro/app/src/main/res/layout/row_item.xml" value="0.24909420289855072" />
+        <entry key="..\:/TDTU/HK1-2021-2022/Android/practice/QuanLy-PhongTro/PhongTro/app/src/main/res/menu/master_bottom_navigation.xml" value="0.27447916666666666" />
+        <entry key="..\:/TDTU/HK1-2021-2022/Android/practice/QuanLy-PhongTro/PhongTro/app/src/main/res/menu/menudialog.xml" value="0.27447916666666666" />
+>>>>>>> 778fb45540c3f080dfcac15955aca6ebdf7a1787
       </map>
     </option>
   </component>
