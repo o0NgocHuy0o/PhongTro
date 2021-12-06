@@ -1,12 +1,13 @@
 package nnh19607021.tdtu.phongtro;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class class_PhongTro {
+public class class_PhongTro implements Serializable {
     private String id;
     private String SoPhong;
     private boolean PhongTrong;
-    private int GiaTro;
+    private long GiaTro;
     private class_NguoiTro nguoitro;
 
     public String getId() {
@@ -33,7 +34,7 @@ public class class_PhongTro {
         PhongTrong = phongTrong;
     }
 
-    public int getGiaTro() {
+    public long getGiaTro() {
         return GiaTro;
     }
 

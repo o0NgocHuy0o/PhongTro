@@ -11,7 +11,7 @@
         android:title="Home" />
 
     <item
-        android:id="@+id/navigationMyProfile"
+        android:id="@+id/navigationRegister"
         android:icon="@drawable/ic_user"
-        android:title="User" />
+        android:title="Register" />
 </menu>

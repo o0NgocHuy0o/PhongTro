@@ -10,29 +10,33 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="-5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
 
             <TextView
-                android:text="QLPT"
-                style="@style/viewParent.headerText" />
+                style="@style/viewParent.headerText"
+                android:text="QLPT" />
 
             <TextView
-                android:text="Đây là app quản lý phòng trọ cho chị chủ nhà a lù"
                 style="@style/viewParent.headerText.contentText"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="20dp"
+                android:text="Đây là app quản lý phòng trọ cho chị chủ nhà a lù" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/recyclerView"/>
+                android:layout_height="wrap_content" />
 
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,9 @@
 package nnh19607021.tdtu.phongtro;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class class_NguoiTro {
+public class class_NguoiTro implements Serializable {
     private String id;
     private String HoTen;
     private Date NgaySinh;

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THÔNG TIN NGƯỜI TRỌ"
+        android:layout_marginBottom="20dp"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ Tên:"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh:"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/etNgaySinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Số điện thoại:"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Giới tính:"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"/>
+            <RadioGroup
+                android:id="@+id/rdGroup"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Male"
+                    android:padding="5dp"
+                    android:id="@+id/rbMale"/>
+                <RadioButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Female"
+                    android:padding="5dp"
+                    android:id="@+id/rbFemale"
+                    android:checked="true"/>
+            </RadioGroup>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá thuê trọ:"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/etTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnUP"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@drawable/ic_update"/>
+
+</LinearLayout>

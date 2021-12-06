@@ -11,8 +11,10 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class PhongTroAdapter extends RecyclerView.Adapter<PhongTroAdapter.ViewHolder> {
@@ -39,19 +41,26 @@ public class PhongTroAdapter extends RecyclerView.Adapter<PhongTroAdapter.ViewHo
         if (pt==null)
             return;
         holder.twSoPhong.setText(pt.getSoPhong());
-        holder.twThongTin.setText(pt.getNguoitro().getHoTen());
+        if(pt.isPhongTrong() == true)
+            holder.twThongTin.setText("Phòng trống");
+        else
+            holder.twThongTin.setText(pt.getNguoitro().getHoTen());
         holder.layout_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent i = new Intent(mContext, DetailPhongActivity.class);
-//                Bundle bundle = new Bundle();
-//                bundle.putSerializable("object_person", pt);
-//                i.putExtras(bundle);
-//                mContext.startActivity(i);
-                Toast.makeText(mContext, "Click" + pt.getSoPhong(), Toast.LENGTH_SHORT).show();
+                onClickDetail(pt);
             }
         });
     }
+    public void onClickDetail(class_PhongTro pt){
+        Intent i = new Intent(mContext, DetailActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("object_phongtro", pt);
+        i.putExtras(bundle);
+        mContext.startActivity(i);
+        Toast.makeText(mContext, "Click" + pt.getSoPhong(), Toast.LENGTH_SHORT).show();
+    }
+
     public void release(){
         mContext=null;
     }
