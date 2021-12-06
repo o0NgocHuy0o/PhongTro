@@ -2,12 +2,14 @@ package nnh19607021.tdtu.phongtro;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -29,11 +31,12 @@ public class MainActivity extends AppCompatActivity {
     FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
     DatabaseReference _myRef;
     RecyclerView recyclerView;
-    //class_PhongTro pt;
+    class_PhongTro pt;
     ArrayList<class_PhongTro> listPhong;
     PhongTroAdapter phongTroAdapter;
     ArrayList<String> mKeys = new ArrayList<>();
     CardView layout_item;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,12 +122,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.menuAdd:
+                Intent i = new Intent(this, DetailActivity.class);
+                startActivity(i);
             case R.id.navigationHome:
                 Toast.makeText(this, "Nút Home", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.navigationMenu:
                 Toast.makeText(this, "nút Menu", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.navigationRegister:
+                Intent id = new Intent(this,RegisterActivity.class);
+                startActivity(id);
         }
         return super.onOptionsItemSelected(item);
     }
@@ -134,13 +143,13 @@ public class MainActivity extends AppCompatActivity {
 //            pt = new class_PhongTro();
 //        }
 //        class_NguoiTro nt = new class_NguoiTro();
-//        nt.setId(null);
-//        nt.setHoTen(null);
-//        nt.setGioiTinh(true);
+//        nt.setId("5");
+//        nt.setHoTen("null");
+//        nt.setGioiTinh(false);
 //        nt.setNgaySinh(null);
 //        nt.setSDT(null);
 //
-//        pt.setSoPhong("Phòng 3");
+//        pt.setSoPhong("Phòng 5");
 //        pt.setPhongTrong(true);
 //        pt.setGiaTro(1500000);
 //        pt.setNguoitro(nt);

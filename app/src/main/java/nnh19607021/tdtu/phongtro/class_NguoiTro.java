@@ -26,9 +26,7 @@ public class class_NguoiTro implements Serializable {
         HoTen = hoTen;
     }
 
-    public Date getNgaySinh() {
-        return NgaySinh;
-    }
+    public Date getNgaySinh() { return NgaySinh; }
 
     public void setNgaySinh(Date ngaySinh) {
         NgaySinh = ngaySinh;

@@ -1,121 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".DetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="THÔNG TIN NGƯỜI TRỌ"
-        android:layout_marginBottom="20dp"
-        android:textSize="24sp"
-        android:layout_marginTop="25dp"
-        android:layout_gravity="center"
-        android:textColor="@android:color/holo_red_dark"/>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:text="THÔNG TIN NGƯỜI TRỌ"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp" />
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Họ Tên:"
                 android:textColor="@android:color/holo_red_light"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/etName"
                 android:layout_width="254dp"
                 android:layout_height="wrap_content" />
         </TableRow>
+
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ngày sinh:"
                 android:textColor="@android:color/holo_red_light"
-                android:textSize="20sp"/>
-            <EditText
+                android:textSize="20sp" />
+
+            <DatePicker
                 android:id="@+id/etNgaySinh"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="number"/>
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
         </TableRow>
+
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
                 android:text="Số điện thoại:"
                 android:textColor="@android:color/holo_red_light"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
+
             <EditText
                 android:id="@+id/etPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"/>
+                android:inputType="number" />
         </TableRow>
+
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Giới tính:"
                 android:textColor="@android:color/holo_red_light"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
+
             <RadioGroup
                 android:id="@+id/rdGroup"
                 android:orientation="horizontal">
+
                 <RadioButton
-                    android:layout_height="wrap_content"
+                    android:id="@+id/rbMale"
                     android:layout_width="wrap_content"
-                    android:text="Male"
+                    android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:id="@+id/rbMale"/>
+                    android:text="Male" />
+
                 <RadioButton
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="Female"
-                    android:padding="5dp"
                     android:id="@+id/rbFemale"
-                    android:checked="true"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="5dp"
+                    android:text="Female" />
             </RadioGroup>
         </TableRow>
+
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng trọ số:"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etPTSo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Giá thuê trọ:"
                 android:textColor="@android:color/holo_red_light"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
+
             <EditText
                 android:id="@+id/etTien"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </TableRow>
     </TableLayout>
-    <Button
-        android:layout_marginTop="20dp"
-        android:id="@+id/btnUP"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
+    </LinearLayout>
+    <!--    <Button-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:id="@+id/btnUP"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:background="@drawable/ic_update"/>-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:background="@drawable/ic_update"/>
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="#FF5722"
+        app:menu="@menu/menu_detail" />
 
-</LinearLayout>
+</RelativeLayout>
